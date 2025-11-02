@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Hidroponik Smart</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar">
+        <div class="logo">🌿 Hidroponik<span>Smart</span></div>
+        <ul>
+            <li><a href="/">Beranda</a></li>
+            <li><a href="/dashboard" class="active">Dashboard</a></li>
+            <li><a href="/">Logout</a></li>
+        </ul>
+    </nav>
+
+    <!-- ===== DASHBOARD CONTENT ===== -->
+    <section class="dashboard">
+        <h1>Dashboard Monitoring Hidroponik</h1>
+
+        <!-- Kartu Statistik -->
+        <div class="cards">
+            <div class="card">
+                <h3>Nilai Maksimum</h3>
+                <p id="maxVal">-</p>
+            </div>
+            <div class="card">
+                <h3>Nilai Minimum</h3>
+                <p id="minVal">-</p>
+            </div>
+            <div class="card">
+                <h3>Rata-rata</h3>
+                <p id="avgVal">-</p>
+            </div>
+            <div class="card">
+                <h3>Data Terkini</h3>
+                <p id="latestVal">-</p>
+            </div>
+        </div>
+
+        <!-- Grafik -->
+        <div class="chart-container">
+            <canvas id="sensorChart"></canvas>
+            <p class="update-time">Terakhir diperbarui: <span id="updateTime">-</span></p>
+        </div>
+    </section>
+
+    <script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+</body>
+</html>
