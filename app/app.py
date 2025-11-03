@@ -7,7 +7,7 @@ app = Flask(__name__)
 db = mysql.connector.connect(
     host="localhost",
     user="root",
-    password="",  # kosong karena default Laragon
+    password="",  
     database="hidroponik_db"
 )
 cursor = db.cursor(dictionary=True)

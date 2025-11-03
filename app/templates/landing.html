@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hidroponik Monitoring</title>
     <link rel="stylesheet" href="static/css/landing.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -13,10 +13,11 @@
     <nav>
         <div class="logo">🌿 Hidroponik<span>Smart</span></div>
         <ul>
-            <li><a href="/login">Beranda</a></li>
-            <li><a href="/login">Login</a></li>
-            <li><a href="/registrasi">Register</a></li>
-            <li><a href="#kontak">Kontak</a></li>
+            <li><a href="#hero" class="nav-link">Beranda</a></li>
+            <li><a href="#fitur" class="nav-link">Fitur</a></li>
+            <li><a href="#kontak" class="nav-link">Kontak</a></li>
+            <li><a href="/login" class="nav-link nav-login">Login</a></li>
+            <li><a href="/registrasi" class="nav-link nav-register">Register</a></li>
         </ul>
     </nav>
 
@@ -25,40 +26,102 @@
         <div class="hero-text">
             <h1>Monitoring Hidroponik <br><span>Lebih Mudah dan Cerdas</span></h1>
             <p>Pantau kondisi tanaman hidroponikmu secara real-time melalui web dan aplikasi mobile.</p>
-            <a href="#fitur" class="btn-primary">Lihat Fitur</a>
+            <a href="#tentang" class="btn-primary">Pelajari Lebih Lanjut</a>
         </div>
         <div class="hero-img">
             <img src="static/img/ilustrasidesain.png" alt="Hydroponic Illustration">
         </div>
     </section>
 
-    <!-- ====== FITUR SECTION ====== -->
+    <!-- ====== TENTANG HIDROPONIK VERTIKAL ====== -->
+    <section id="tentang">
+        <h2>Apa itu Hidroponik Vertikal?</h2>
+        <p class="tentang-desc">Hidroponik vertikal adalah metode bercocok tanam modern tanpa menggunakan tanah, di mana tanaman ditanam secara bertingkat ke atas. Sistem ini sangat cocok untuk lahan terbatas dan menghasilkan produktivitas yang lebih tinggi.</p>
+
+        <div class="tentang-grid">
+            <div class="info-card">
+                <h3>🔧 Cara Kerja</h3>
+                <ul>
+                    <li>Sistem pipa PVC bertingkat vertikal</li>
+                    <li>Nutrisi dialirkan melalui pompa otomatis</li>
+                    <li>Akar tanaman menyerap nutrisi dari air</li>
+                    <li>Monitoring sensor suhu, pH, dan kelembapan</li>
+                </ul>
+            </div>
+
+            <div class="info-card">
+                <h3>🌱 Tanaman yang Cocok</h3>
+                <ul>
+                    <li>Sayuran daun (selada, kangkung, bayam)</li>
+                    <li>Herbs (mint, basil, cilantro)</li>
+                    <li>Strawberry dan tomat ceri</li>
+                    <li>Cabai dan paprika</li>
+                </ul>
+            </div>
+
+            <div class="info-card">
+                <h3>✨ Keunggulan</h3>
+                <ul>
+                    <li>Hemat ruang hingga 80%</li>
+                    <li>Pertumbuhan 30% lebih cepat</li>
+                    <li>Hemat air hingga 90%</li>
+                    <li>Bebas hama dan pestisida</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== FITUR WEBSITE SECTION ====== -->
     <section id="fitur">
-        <h2>Fitur Utama</h2>
+        <h2>Fitur Monitoring Kami</h2>
+        <p class="fitur-desc">Sistem monitoring canggih yang memudahkan Anda mengontrol dan menganalisis kondisi tanaman hidroponik secara real-time</p>
+
         <div class="fitur-container">
             <div class="fitur-box">
                 <img src="https://img.icons8.com/color/96/temperature.png" alt="Sensor">
                 <h3>Pemantauan Sensor</h3>
-                <p>Menampilkan suhu, kelembapan, dan pH air secara otomatis dan real-time.</p>
+                <p>Menampilkan suhu, kelembapan, dan pH air secara otomatis dan real-time langsung dari perangkat IoT.</p>
             </div>
             <div class="fitur-box">
                 <img src="https://img.icons8.com/color/96/cloud-sync.png" alt="Data Cloud">
                 <h3>Sinkronisasi Data</h3>
-                <p>Data tersimpan di cloud, bisa diakses dari mana saja melalui web atau mobile app.</p>
+                <p>Data tersimpan di cloud, bisa diakses dari mana saja melalui web atau mobile app kapan pun Anda butuhkan.</p>
             </div>
             <div class="fitur-box">
                 <img src="https://img.icons8.com/color/96/line-chart.png" alt="Chart">
                 <h3>Grafik Monitoring</h3>
-                <p>Visualisasi data sensor dalam bentuk grafik interaktif untuk analisis pertumbuhan tanaman.</p>
+                <p>Visualisasi data sensor dalam bentuk grafik interaktif untuk analisis pertumbuhan dan kondisi tanaman.</p>
             </div>
         </div>
     </section>
 
     <!-- ====== FOOTER ====== -->
     <footer id="kontak">
-        <h4>Hubungi Kami Hehe</h4>
-        <p>Email: hidroponik.smart@gmail.com</p>
-        <p>© 2025 HidroponikSmart - Sistem Monitoring Tanaman Hidroponik</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>HidroponikSmart</h4>
+                <p>Sistem monitoring tanaman hidroponik yang mudah dan cerdas untuk masa depan pertanian yang lebih baik.</p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Hubungi Kami</h4>
+                <p>Email: hidroponik.smart@gmail.com</p>
+                <p>WhatsApp: +62 812-3456-7890</p>
+                <p>Alamat: Bandung, Indonesia</p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Tautan Cepat</h4>
+                <p><a href="#hero">Beranda</a></p>
+                <p><a href="#tentang">Tentang</a></p>
+                <p><a href="#fitur">Fitur</a></p>
+                <p><a href="/login">Login</a></p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 HidroponikSmart. All rights reserved.</p>
+        </div>
     </footer>
 
 </body>
