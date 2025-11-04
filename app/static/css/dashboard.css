@@ -1,4 +1,7 @@
-
+/* ====================================
+   Dashboard Hidroponik IoT
+   Modern & Clean Design with SVG Icons
+   ==================================== */
 
 * {
     margin: 0;
@@ -93,6 +96,14 @@ body {
     stroke-width: 2;
     stroke-linecap: round;
     stroke-linejoin: round;
+}
+
+/* Settings icon di sidebar (filled) - ukuran lebih kecil */
+.nav-item svg.icon-settings {
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+    stroke: none;
 }
 
 .sidebar-footer {
